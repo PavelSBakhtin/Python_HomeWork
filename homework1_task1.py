@@ -11,7 +11,6 @@ if x < 8 and x > 0:
 else:
     print("There is no such day of the week!")
 
-# x = int(input("Enter the number of the day of the week: "))
 # if x < 8 and x > 0:
 #     if x == 1: print("Monday")
 #     if x == 2: print("Tuesday")
