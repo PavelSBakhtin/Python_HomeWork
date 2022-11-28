@@ -19,3 +19,9 @@ print(x[0], x[1], x[2])
 #         for z in range(3):
 #             print(not (x or y or z) == (not x and not y and not z))
 #             print(x, y, z)
+
+# # решение преподавателя:
+# for x in range(2):
+#     for y in range(2):
+#         for z in range(2):
+#             print(not (x or y or z) == (not x and not y and not z))
