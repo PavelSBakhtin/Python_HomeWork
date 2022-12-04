@@ -11,7 +11,7 @@ def sum(num):
 n = input("Enter any number: ")
 print(f"Sum of digits: {sum(n)}")
 
-# # решение от преподавателя:
+# # Решение от преподавателя:
 # n = float(input('Введите число - '))
 # while n % 1 > 0:
 #     n *= 10
