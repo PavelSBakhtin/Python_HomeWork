@@ -12,3 +12,9 @@ b = []
 for i in range(1, a + 1):
     b.append(factor(i))
 print(b)
+
+# number = int(input("введите натуральное число N :"))
+# count = 1
+# for i in range(1,number+1):
+#     count = count*i
+#     print(count, end = " ")
