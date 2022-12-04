@@ -17,17 +17,12 @@ print(a)
 # a = [2, 3, 5, 9, 3]
 b = []
 s = 0
-
 for i in range(len(a)):
     if i % 2 != 0:
         b.append(a[i])
-
 # for i in range(1, len(a), 2):
 #     b.append(a[i])
-
 print(b)
-
 for j in b:
     s += j
-
 print(f"Sum of numbers in odd positions: {s}")
