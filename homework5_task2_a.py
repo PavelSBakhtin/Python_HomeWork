@@ -42,6 +42,7 @@ while sweets_table > 0:
         turn = 1
         result(second_player, k, second_count, sweets_table)
         continue
+
 if turn == 2:
     print(f"The player {first_player} won")
 else:
