@@ -19,7 +19,7 @@ else:
 
 def input_value(player):
     x = int(input(f"{player}, enter sun of sweets to take from 1 to 28: "))
-    while 1 > x > 28:
+    while x < 1 or x > 28:
         x = int(input(f"{player}, enter sun of sweets to take from 1 to 28: "))
     return x
 
