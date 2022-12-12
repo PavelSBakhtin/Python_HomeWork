@@ -27,6 +27,12 @@ def result(player, k, count, sweets):
     print(
         f"Went down {player}, he took {k}, now he has {count}. Now on the table {sweets} sweets.")
 
+def turn_bot(sweets):
+    k = random.randint(1, 28)
+    while sweets - k < 0:
+        k = random.randint(1, 28)
+    return k
+
 while sweets_table > 0:
     if turn == 1:
         k = input_value(first_player)
@@ -36,7 +42,7 @@ while sweets_table > 0:
         result(first_player, k, first_count, sweets_table)
         continue
     else:
-        k = random.randint(1, 28)
+        k = turn_bot(sweets_table)
         second_count += k
         sweets_table -= k
         turn = 1
