@@ -29,7 +29,7 @@ def result(player, k, count, sweets):
 
 def turn_ai(sweets, count1, count2):
     if count1 == 0 and count2 == 0:
-        if sweets % 28 == 1:
+        if sweets % 29 == 1:
             k = 1
         else:
             k = sweets % 28 - 1
@@ -66,3 +66,23 @@ if turn == 2:
     print(f"The player {first_player} won")
 else:
     print(f"The player {second_player} won")
+
+# # Решение от преподавателя:
+# a = int(input('Введите количество конфет: '))
+# hod = 0
+# wins = {0: 'Игрок', 1: 'Бот'}
+# while a > 0:
+#     if a <= 28:
+#         print(f'Выиграл {wins[hod]}')
+#         break
+#     if hod % 2 == 0:
+#         print('Ход Игрока')
+#         d = int(input('Введите количество конфет, которое хотите взять: '))
+#         a -= d
+#         print(f'Осталось конфет: {a}')
+#     else:
+#         print('Ход Бота')
+#         d = a % 29
+#         a -= d
+#         print(f'Осталось конфет: {a}')
+#     hod = (hod + 1) % 2
