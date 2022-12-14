@@ -8,5 +8,5 @@
 import random
 a = random.randint(5, 11)
 b = [1, 1]
-c = [b.append(b[i-2] + b[i-1]) for i in range(2, a)]
-d = [b.insert(0, b[1] - b[0]) for i in range(len(b)+1)]
+b = [b.append(b[i-2] + b[i-1]) for i in range(2, a)]
+b = [b.insert(0, b[1] - b[0]) in range(len(b)+1)]
