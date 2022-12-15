@@ -14,7 +14,7 @@ for i in range(len(text)-1):
         count = 1
 print(a)
 
-def decoding(text):
+def decoding(text:str):
     num = ''
     res = ''
     for i in range(len(text)):
