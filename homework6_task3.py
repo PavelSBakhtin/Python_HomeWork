@@ -10,5 +10,5 @@ b = []
 for i in range(a):
     b.append(randint(1, 9))
 print(b)
-c = filter(lambda i: b.count(i) == 1, b)
+c = list(filter(lambda i: b.count(i) == 1, b))
 print(c)
