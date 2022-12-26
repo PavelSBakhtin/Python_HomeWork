@@ -10,7 +10,7 @@ def show_menu() -> int:
     print("6. Delete employee") # удаление сотрудника
     print("7. Update employee details") # обновление данных сотрудника
     print("8. Export data in format .json") # экспорт в json
-    print("9. Export data in format .csv") # экспорт в csv
+    print("9. Export data in format .txt") # экспорт в txt
     print("0. Finish work") # завершить работу
     print("=" * 37) # строка разделитель
     item = int(input("Select a menu item: ")) # выбрать действие
