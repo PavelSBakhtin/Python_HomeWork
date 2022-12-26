@@ -128,11 +128,11 @@ def upd_employee(data):
     print('=' * 30)
     item =  int(input('Choose among the changes: '))
     if item == 1:
-        data[index]['surname'] = input('Enter new surname: ')
+        data[index]['surname'] = input('Enter new surname: ').title()
     if item == 2:
-        data[index]['first_name'] = input('Enter new first name: ')
+        data[index]['first_name'] = input('Enter new first name: ').title()
     if item == 3:
-        data[index]['position'] = input('Enter new position: ')
+        data[index]['position'] = input('Enter new position: ').title()
     if item == 4:
         data[index]['phone'] = input('Enter new phone: ')
     if item == 5:
