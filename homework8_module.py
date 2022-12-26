@@ -102,7 +102,7 @@ def add_employee(data, data_d):
     data.append(new_info(info))
     change_database(data)
 
-add_employee(read_database(),read_deleted())
+# add_employee(read_database(),read_deleted())
 
 def del_employee(data, data_d):
     print('\nDismissal of an employee\n' + '=' * 30)
@@ -126,15 +126,39 @@ def upd_employee(data):
     print(*data[index].values())
     print('1 - Change surname\n2 - Change first name\n3 - Change position\n4 - Change phone\n5 - Change salary')
     print('=' * 30)
-    match int(input('Choose among the changes: ')):
-        case 1:
-            data[index]['surname'] = input('-> Изменить фамилию: ')
-        case 2:
-            data[index]['first_name'] = input('-> Изменить имя: ')
-        case 3:
-            data[index]['position'] = input('-> Изменить должность: ')
-        case 4:
-            data[index]['phone'] = input('-> Изменить телефон: ')
-        case 5:
-            data[index]['salary'] = int(input('-> Изменить зарплату: '))
-    
+    item =  int(input('Choose among the changes: '))
+    if item == 1:
+        data[index]['surname'] = input('Enter new surname: ')
+    if item == 2:
+        data[index]['first_name'] = input('Enter new first name: ')
+    if item == 3:
+        data[index]['position'] = input('Enter new position: ')
+    if item == 4:
+        data[index]['phone'] = input('Enter new phone: ')
+    if item == 5:
+        data[index]['salary'] = int(input('Enter new salary: '))
+    change_database(data)
+
+# upd_employee(read_database())
+
+def exp_data_json():
+    read_data = 'homework8_database_a.csv'
+    write_data = 'homework8_database.json'
+    with open(read_data, 'r', encoding = 'UTF-8-sig') as rf,\
+        open(write_data, 'w', encoding = 'UTF-8-sig') as wf:
+        for line in rf:
+            wf.write(line)
+    print('=' * 37 + '\nThe data was exported to .json')
+
+# exp_data_json()
+
+def exp_data_txt():
+    read_data = 'homework8_database_a.csv'
+    write_data = 'homework8_database.txt'
+    with open(read_data, 'r', encoding = 'UTF-8-sig') as rf,\
+        open(write_data, 'w', encoding = 'UTF-8-sig') as wf:
+        for line in rf:
+            wf.write(line)
+    print('=' * 37 + '\nThe data was exported to .txt')
+
+# exp_data_txt()
